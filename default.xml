@@ -261,8 +261,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/av" name="AsteroidOS/android_frameworks_av" remote="github" groups="pdk" />
+  <project path="frameworks/base" name="AsteroidOS/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -322,7 +322,6 @@
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
@@ -381,7 +380,7 @@
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
-  <project path="system/media" name="platform/system/media" groups="pdk" />
+  <project path="system/media" name="AsteroidOS/android_system_media" remote="github" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
@@ -403,14 +402,14 @@
   <project path="build" name="AsteroidOS/android_build" remote="github" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="external/skia" name="platform/external/skia" revision="marshmallow-dr1.5-release" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" revision="marshmallow-dr1.5-release" />
-  <project path="system/core" name="platform/system/core" revision="marshmallow-dr1.5-release"/>
+  <project path="external/skia" name="AsteroidOS/android_external_skia" remote="github" revision="master" />
+  <project path="hardware/libhardware" name="AsteroidOS/android_hardware_libhardware" remote="github"/>
+  <project path="system/core" name="AsteroidOS/android_system_core" remote="github" />
 
 <!--   Asteroid specific repositories -->
   <project path="bionic" name="AsteroidOS/android_bionic" remote="github" />
   <project path="frameworks/native" name="AsteroidOS/android_frameworks_native" remote="github" />
-  <!-- <project path="hardware/qcom/display" name="AsteroidOS/android_hardware_qcom_display" remote="github" /> -->
+  <project path="hardware/qcom/display" name="AsteroidOS/android_hardware_qcom_display" remote="github" />
   
   <project path="libhybris" name="libhybris/libhybris" remote="github" revision="master" />
 </manifest>
